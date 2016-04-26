@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Dylan Ruggeroli</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<script type="text/javascript">
+window.onload=function(){
+	var url = window.location.pathname;
+	var loc = url.substring(url.lastIndexOf('/') +1);
+	var page = loc.substring(0, loc.lastIndexOf('.'));
+	document.getElementById(page).className = "active";
+};
+</script>
+
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header-box">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1>Dylan C. Ruggeroli</h1>
+			</div>
+			<div id="menu">
+				<ul>
+					<li id="index"><a href="index.html" accesskey="1" title="">Home</a></li> 
+					<li id="portfolio"><a href="portfolio.html" accesskey="2" title="">Portfolio</a></li>
+					<li id="resume"><a href="resume.html" accesskey="5" title="">Résumé</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="banner">
+		 <div class="container">
+			<div class="title">
+				<h2>software &amp; web development</h2>
+			</div>	
+		</div>
+	</div>
+
+	<div id="wrapper">
+		<p>Welcome! I am Dylan Ruggeroli, an aspiring software developer currently pursuing a Bachelor's degree in Computer Science at the University of Oregon. This is my web page, created and maintained to centralize professional information, personal projects, and eventually a developmental blog for current projects.</p>
+		<div id="three-column" class="container">
+			<div class="title">
+				<h2>quick information</h2>
+				<span class="byline">View existing profiles or touch base via email</span>
+			</div>
+			<div class="boxA">
+				<a href="http://www.github.com/dchar"><span class="icon-github"></span></a>
+				<p>GitHub, where indepent projects will be available during and after development.</p>
+			</div>
+			<div class="boxB">
+				<a href="mailto:dylanr@uoregon.edu"><span class="icon-resume"></span></a>
+				<p>Address an email to my University account: dylanr@uoregon.edu</p>
+			</div>
+			<div class="boxC">
+				<a href="https://www.linkedin.com/pub/dylan-ruggeroli/82/294/844"><span class="icon-linkedin"></span></a>
+				<p>LinkedIn, for professional networking and a list of skillsets. </p>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="title">
+		<h2>developmental blog</h2>
+		<span class="byline">Read regular posts about my current projects</span>
+	</div>
+
+	<div id ="blogentry">
+		<div class = "container">
+			<div class = "table">
+			<div class = "th">
+			<table>
+				<tr>
+					<th><h3>IPv4 &amp; IPv6 Duality and BGP Anomalies</h3></th>
+					<th class='alignRight'><h3>4.8.2016</h3></th>
+				</tr>
+
+				<tr>
+					<td>&emsp; A fellow group member and I have decided to resume work on the duality project we began in January. Instead of continuing to explore network topologies at the router level, we would like to concentrate our efforts on learning more about the nature of BGP disruptions, which are occurring on a grander scale. As explained in my portfolio, we have access to a large amount of archived RIB table data. Our system currently takes an average of six minutes to process routing tables for both IPv4 and IPv6, then outputs path information for a single ASN. Being that large autonomous systems have several ASN's, our first goal is to parallelize RIB table processing in an attempt to broaden our understanding. <br />
+					</td>
+				</tr>
+
+				<tr>
+					<th><h3>Google Play: Audiobook Sync</h3></th>
+				</tr>
+
+				<tr>
+					<td>&emsp; I will be attempting to write a Chrome extension that adds functionality to two of the Google Play services. Without going into detail, I both listen to and read books. That said, I'd like to explore the potential for an extension to gather file information from Google Music and use it to sync with my location in a written
+
+					</td>
+				</tr>
+
+			</table>
+
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="back" style="text-align: center">
+		<p><a href="#">Return to Top</a></p>
+	</div>
+
+</div>
+
+</body>
+</html>

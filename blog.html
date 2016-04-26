@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Dylan Ruggeroli</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<script>
+window.onload=function(){
+	var url = window.location.pathname;
+	var loc = url.substring(url.lastIndexOf('/') +1);
+	var page = loc.substring(0, loc.lastIndexOf('.'));
+	document.getElementById(page).className = "active";
+};
+</script>
+
+</head>
+<body>
+<div id="header-wrapper">
+
+	<div id="header-box">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="#">Dylan C. Ruggeroli</a></h1>
+			</div>
+			<div id="menu">
+				<ul>
+					<li id="index"><a href="index.html" accesskey="1" title="">Home</a></li>
+					<li id="blog"><a href="blog.html" accesskey="2" title="">Blog</a></li>
+					<li id="resume"><a href="resume.html" accesskey="5" title="">Résumé</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="banner">
+		 <div class="container">
+			<div class="title">
+				<h2>developmental blog</h2>
+			</div>
+		</div>
+	</div>
+
+	<div id ="blogentry">
+		<div class = "container">
+			<div class = "table">
+			<div class = "th">
+			<table>
+				<tr>
+					<th><h2>IPv4 &amp; IPv6 Updates and Unity3d Project Introduction</h2></th>
+					<th class='alignRight'><h3>2.6.2016</h3></th>
+				</tr>
+				<tr>
+					<td>&emsp;I will just provide a brief update for the security project and go over everything that has been done for L0 of the Unity3D side-project.  </td>
+				</tr>
+				<tr>
+					<td><b><br> IPv4 &amp; IPv6 Makes BGP Anomaly Detection Difficult </b>
+					<br> &emsp; We need a simple way to determine which of the domains listed on Alexa actually support IPv6 at this time. My quick fix for this will be to generate a new text file in place of the original "output.txt" that contains as many domains as possible. Coupled_tracert will only create text data for sites supporting IPv6 so, after running the program once, we will be able to modify the list of websites to contain only those supporting IPv6. Then we can proceed with gathering data.
+				</tr>
+				<tr>
+					<td><br><b>Unity3D</b>
+					<br> &emsp; Review unity3d project.</td>
+				</tr>
+			</table>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div id ="blogentry">
+		<div class = "container">
+			<div class = "table">
+			<div class = "th">
+			<table>
+				<tr>
+					<th><h2>New Habits</h2></th>
+					<th class='alignRight'><h3>2.5.2016</h3></th>
+				</tr>
+				<tr>
+					<td>&emsp;In order be more consistent about using this blog, I need to be more familiar with writing quick and informative entries. For the first week, or as long as it takes to get comfortable, I plan to post daily.  </td>
+				</tr>
+				<tr>
+					<td><b><br>IPv4 &amp; IPv6 Makes BGP Anomaly Detection Difficult</b>
+					<br>&emsp;The coupled_tracert program is complete and working as intended. However, I had some issues with my virtual Ubuntu machine. Evidently I cannot call traceroute using a VM. At least not without major tweaking, which is another animal. I have not explored the issue, but I assume it involves the way VirtualBox interfaces with networking protocols of the host. Regardless, I now need to run coupled_tracert from the Windows cmd. Unfortunately, we need to run coupled_tracert on 100 or more domains at a time, and that requires a simple batch script.  I have never needed to use batch prior to this project, so I am thankful to learn this functionality is possible in one line: <br>
+					<pre>for /F "tokens=*" %%A in (output.txt) do coupled_tracert.py %%A </pre>
+					So, the script works brilliantly, but we ran into an interesting issue. Evidently only 10 of Alexa's top 100 websites actually support IPv6.. I can admit, I expected more. In hindsight, however, this makes a lot of sense. I mean, IPv6 requires hardware, and hardware requires money. Not to mention IPv6 is a solution to an address space issue, so it may be that a number of major companies exist in regions of the world that simply have not run out of IPv4 address space yet. I am actually interested in keeping output.txt and potentially running coupled_tracert again next year, just to see. Could be neat. The next step here is to find at least 100 sites that are currently supporting IPv6.  </td>
+				</tr>
+			</table>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+	<div id ="blogentry">
+		<div class = "container">
+			<div class = "table">
+			<div class = "th">
+			<table>
+				<tr>
+					<th><h2>Huge First Update</h2></th>
+					<th class='alignRight'><h3>2.4.2016</h3></th>
+
+				</tr>
+				<tr>
+					<td>&emsp;So, blogging development projects is much harder than expected. I wanted the blog to be a means to track my thoughts and plans for projects over time, but writing blog entries is more difficult than writing the programs themselves. That being said this is entry number one. For now, I just need to list everything I am currently working on to provide a basis: </td>
+				</tr>
+				<tr>
+					<td><b><br>Computer &amp; Network Security: IPv4 and IPv6 Makes BGP Anomaly Detection Difficult</b>
+					<br>&emsp;This particular project is a part of a class project for CIS 433: Computer &amp; Network Security. The first portion of the project involves the comparison of IPv6 and IPv4 traceroute results for the first 100 of Alexa's top 500 global sites. We would like to compare results for each protocol based on hop count and hop variability. Going a step further, we intend to compare the AS (autonomous system) paths of these results. Every router encountered by our traces belongs to an AS, and we would like to learn which. For now, we need to be researching a potential solution for IP to AS resolution while, in the meantime, gathering trace data and designing a relational database model for storing said data. As of this post, we have written a couple of simple Python programs to get the ball rolling: <br><br>
+					&emsp; &bull; coupled_tracert.py - Takes domain name as string argument and creates a new text file of the format "domain_month_date.txt." Then, two traceroutes are sent to the domain for IPv6 and IPv4 respectively. Traceroute results are parsed and stored in the newly generated text file.<br>
+					&emsp; &bull; topsitescraper.py - A standard web scraper intended to pull the top 100 domains listed on www.alexa.com, storing them in a newly generated text file titled "output.txt."<br>
+					<br>Note, we will write a simple script to run coupled_tracert.py against each line of output.txt</td>
+				</tr>
+
+				<tr>
+					<td><b><br>Django Development: </b>
+					<br>&emsp;I have recently been spending a large portion of my time and effort on professional development. Unfortunately, the more I learn about computer science, the more I realize that I know nothing. There are too many awesome frameworks and SDK's.. so I have to choose. Thankfully, I know that maintaining a blog in HTML and CSS is a little more time consuming that necessary. As a result, I have started to work with the Django framework for Python. All I can really say about this now is that I am impressed. My plan (which I am not even sure is practical/feasible) is to register a domain next month and launch a personal website using Django as a foundation. In a way, I am killing two birds with one stone, because I will not be able to host this page on Oregon's servers for very long after graduating. </td>	
+				</tr>
+
+				<tr>
+					<td><b><br>Unity3D: </b>
+					<br>&emsp; Okay, this is definitely more of a guilty pleasure. I have always had an interest in the mathematics and physics behind three-dimensional games, and Unity3D provides me an opportunity to learn some more. So the plan is this: create a three dimensional pause-and-play RTS with roguelike elements. Sometime either tomorrow or Saturday, I will post about this project exclusively and establish a timeline. The developmental approach will be iterative with cycle lengths of one week. Unfortunately, this blog is the only means through which I can receive feedback against my design criteria. I will disclaim that does not make much sense, but it is the best I can do for now. It is worth noting that L0 for this project is complete and will be described in the aftorementioned blog post. <br><br></td>
+				</tr>
+
+			</table>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="wrapper">
+		<p>Return to Top</p>
+	</div>
+</div>
+
+</body>
+</html>
