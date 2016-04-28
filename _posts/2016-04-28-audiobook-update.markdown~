@@ -33,12 +33,12 @@ def scan_directory():
 	global total_duration
 
 	for file in os.listdir("."):
-		if file.endswith(".mp3"):
-			audiofile      = eyed3.load(file)
-			file_duration  = audiofile.info.time_secs - MP3_SECONDS_BIAS
-			total_duration += file_duration
+	  if file.endswith(".mp3"):
+	  audiofile      = eyed3.load(file)
+	  file_duration  = audiofile.info.time_secs - MP3_SECONDS_BIAS
+	  total_duration += file_duration
 
-			duration_lst.append(file_duration)
+	  duration_lst.append(file_duration)
 
 def request_position():
 	global file_number, secs_into_audiobook
@@ -47,6 +47,12 @@ def request_position():
 	r = s.get('http://localhost:8080/requests/status.xml', verify = False)
 	tree = ET.fromstring(r.content)
 	...
+
+def find_approximate_page(seconds_in):
+	audio_ratio = seconds_in / (total_duration - AUDIO_INTRO_BIAS)
+	approx_page = audio_ratio * float(PAGES_IN_BOOK)
+	return approx_page
 {% endhighlight %}
+
 
 
