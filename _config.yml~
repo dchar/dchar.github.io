@@ -12,7 +12,7 @@ welcome: >
  a developmental blog, and a portfolio for my recent work. 
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://dchar.github.io" # the base hostname & protocol for your site
+url: "http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  dchar
 linkedin_username: dcruggeroli
 banner_image: "/assets/elephant.jpg"
