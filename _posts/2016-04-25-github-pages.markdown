@@ -15,4 +15,5 @@ and well supported. I currently have a prototyped version of the new site that
 I will continue adding content to. Later this afternoon, I will remove old site 
 files from the github.io repository and push the Jekyll template. 
 
-I have done some research and learned that 
+Portions of the website may seem underdeveloped as I transfer, but I am doing 
+my best to make sure all professional information is current and representative

@@ -47,12 +47,6 @@ def request_position():
 	r = s.get('http://localhost:8080/requests/status.xml', verify = False)
 	tree = ET.fromstring(r.content)
 	...
-
-def find_approximate_page(seconds_in):
-	audio_ratio = seconds_in / (total_duration - AUDIO_INTRO_BIAS)
-	approx_page = audio_ratio * float(PAGES_IN_BOOK)
-	return approx_page
 {% endhighlight %}
-
 
 
