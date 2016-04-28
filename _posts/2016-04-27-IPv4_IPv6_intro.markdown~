@@ -1,0 +1,54 @@
+---
+layout: post
+title:  "IPv4 and IPv6 Duality"
+date:   2016-04-27 11:46:47 -0700
+categories: BGP
+---
+Information for the BGP anomaly project has been added to the portfolio.
+The suite is a functional diagnostic tool in its current state, but improvements
+are being discussed.
+
+
+Moving forward, we would like to focus primarily on autonomous system paths. 
+Due to the size of RIB tables, finding AS paths for a given ASN takes too 
+much time. The expanded iteration will be parallelized to reduce the overhead
+involved in comparing RIB table data for both IPv4 and IPv6.
+
+
+For now, the traceroute components of the project have been refined and
+wrapped by an improved batch script.
+
+{% highlight batch %}
+for /F "tokens=*" %%A in (output.txt) do coupled_tracert.py %%A
+
+IF "%1"=="-diag" (
+	for /F "tokens=*" %%A in (output.txt) do diagnostics.py %%A
+	masterDiagnostics.py
+	)
+{% endhighlight %}
+
+The updated script allows for an optional diagnostic update 
+immediately following the traceroute to the last domain scraped
+from Alexa's top 500 websites. Platform validation was also
+added to ensure portability, but the subprocceses can be threaded to
+reduce the time spent on each domain. 
+
+{% highlight python %}
+current_platform = platform.platform()
+
+if current_platform[0] == 'W':
+	bytes_for_six = subprocess.check_output(["tracert", "-6", dest])
+	bytes_for_four = subprocess.check_output(["tracert", "-4", dest])
+else:
+	bytes_for_six  = subprocess.check_output(["traceroute6", dest])
+	bytes_for_four = subprocess.check_output(["traceroute", dest])
+
+string_for_six = bytes_for_six.decode('utf-8')
+string_for_four = bytes_for_four.decode('utf-8')
+
+six_list = parse_trace(string_for_six)
+four_list = parse_trace(string_for_four)
+{% endhighlight %}
+
+
+

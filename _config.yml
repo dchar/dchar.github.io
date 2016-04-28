@@ -1,0 +1,21 @@
+# Site settings
+title: Dylan C. Ruggeroli
+email: dcruggeroli@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  A personal webpage for hosting professional information as well as a
+  developental blog for past and current projects.
+
+welcome: >
+ I am Dylan Ruggeroli, an aspiring software developer currently pursuing
+ a Bachelor's degree in Computer Science at the University of Oregon. This
+ is my web page, created and maintained to centralize professional information,
+ developmental blog, and portfolio for past work
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+github_username:  dchar
+linkedin_username: dcruggeroli
+banner_image: "/assets/elephant.jpg"
+
+# Build settings
+markdown: kramdown
