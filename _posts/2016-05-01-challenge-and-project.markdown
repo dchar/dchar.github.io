@@ -7,7 +7,7 @@ categories: general
 
 A general update for this week.
 
-##### Programming Challenge
+#### Programming Challenge
 My attention was recently brought to web services like HackerRank, which provide
 time-based programming challenges. The challenges are interesting and fun to 
 approach, but I have minimal experience "programming for time." I am excited to
@@ -15,7 +15,7 @@ see how that will change in the coming weeks. I may post solution snippets in
 blog if appropriate. 
 
 
-##### Audiobook Project
+#### Audiobook Project
 The audioreader prototype was completed about a week ago and has been in use
 since. Unfortunately, I have not had time to exhaustively test the prototype.
 Before I get back to testing, I will clean up the implementation slightly. 
