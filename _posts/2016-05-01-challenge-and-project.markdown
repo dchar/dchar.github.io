@@ -27,6 +27,9 @@ narrators seldom verbalize this information (intro/outro biases)
 
 + There are page gaps at the end of chapters that narrators can ignore
 
++ Assume narrators read at different paces and audiobook files are 
+organized differently for every series
+
 It is also worth noting I have issues with the fact that I am testing this 
 prototype on a single series. I would like to use this in the long run, and
 it wont do if I have to modify source for each series. I need to find a 
@@ -34,6 +37,7 @@ solution for automating this process with audibooks and eBooks, so I can
 quickly gather average values for the offsets and biases. At later point,
 I can use the averages to (hopefully) get closer to the actual page. I will
 also be adding a manual tuning feature for special situations. 
+
 
 
 
