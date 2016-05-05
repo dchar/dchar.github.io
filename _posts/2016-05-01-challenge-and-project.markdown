@@ -38,6 +38,9 @@ quickly gather average values for the offsets and biases. At later point,
 I can use the averages to (hopefully) get closer to the actual page. I will
 also be adding a manual tuning feature for special situations. 
 
+EDIT (5/4): I will change the blog feed soon so that the three most recent
+posts are displayed and the entire list is hosted on a separate page
+
 
 
 
