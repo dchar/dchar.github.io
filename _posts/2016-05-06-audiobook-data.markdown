@@ -6,9 +6,10 @@ categories: audiobook
 
 ---
 
-#### Project Update: Comparing Epubs and MP3s
 I will be exploring epub and speech-to-text modules to help automate tests
 of correctness for the audioreader prototype. 
+
+#### Project Update: Comparing Epubs and MP3s
 
 The audioreader prototype has not changed greatly since the last post. The 
 current issue is dealing with program correctness. The only way I can
