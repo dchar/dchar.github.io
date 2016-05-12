@@ -24,7 +24,7 @@ Regardless, I need to be accurate when approximating page numbers using the
 phrases acquired from speech-to-text. I am testing this aspect of the 
 program manually for now. The x-axis of the graph below represents 
 page numbers within the text, while the y-axis represents deviation for 
-program output (\pi page). In every case, phrases where pulled from the the
+program output ($$\pi$$ page). In every case, phrases where pulled from the the
 first available line on each page.
 
 -> ![page distribution]({{ site.url }}/assets/WOTerror.png) <-
