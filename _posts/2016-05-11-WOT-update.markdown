@@ -27,7 +27,7 @@ page numbers within the text, while the y-axis represents deviation for
 program output (\pi page). In every case, phrases where pulled from the the
 first available line on each page.
 
-![page distribution]({{ site.url }}/assets/WOTerror.png)
+-> ![page distribution]({{ site.url }}/assets/WOTerror.png) <-
 
 The graph does not suggest much of anything conclusive, but it does lend
 insight to some of my issues. I can eyeball a seemingly normal distribution,
