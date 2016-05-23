@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Limiting Scope for the Audibook Project"
+title:  "Limiting Scope for the Audiobook Project"
 date:   2016-05-11 07:01:11 -0700
 categories: audiobook
 
